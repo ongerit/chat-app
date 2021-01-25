@@ -1,0 +1,100 @@
+.chat-app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  flex-direction: column;
+}
+
+.chat-wrapper {
+  border: 1px solid #000;
+  border-radius: 14px;
+  min-width: 350px;
+  position: relative;
+}
+
+.submit-wrapper {
+  bottom: 10px;
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid #000;
+  padding-top: 10px;
+}
+
+form {
+  width: 100%;
+  padding-left: 10px;
+  display: flex;
+}
+
+form input {
+  flex-grow: 1;
+  appearance: none;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+form button {
+  background: #009657;
+  border: none;
+  border-radius: 12%;
+  color: #fff;
+  flex-grow: 0.2;
+  margin-right: 20px;
+  margin-left: 6px;
+  padding: 0;
+}
+
+.user {
+  height: 20px;
+  padding: 5px 0 5px 12px;
+  border-bottom: 1px solid #000;
+}
+
+.user__name {
+  margin: 0;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.messages {
+  height: 400px;
+  overflow: scroll;
+  padding: 13px 0 40px 12px;
+}
+
+.message {
+  background-color: #ef42b2;
+  width: 200px;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  line-height: 28px;
+  margin-bottom: 5px;
+}
+
+.message.blur {
+  filter: blur(3px);
+}
+
+.message.replied,
+.message.replied + .message {
+  background: paleturquoise;
+  margin-bottom: 0;
+  border-radius: 4px;
+  border-bottom: 1px solid #0000ff;
+}
+
+.message.replied + .message {
+  margin: 0 0 10px 14px;
+}
+
+.user-input {
+  margin-bottom: 10px;
+}
+
+.user-input input {
+  border: none;
+  border-bottom: 1px solid #000;
+}
